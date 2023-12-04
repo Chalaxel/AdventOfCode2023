@@ -14,7 +14,7 @@ for i, line in enumerate(inputLines):
     # Finding the common numbers
     commun = [n for n in nb_you_have if n in winning_nb]
 
-    # Adding the numbers of total card we got (Part 2)
+    # Adding the numbers of total card we copied (Part 2)
     for k in range(scratch_card_nb[i]):
         for j in range(i+1, i+1+len(commun)):
             scratch_card_nb[j] += 1
